@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.spec.bak
+
+# Project output / scraped data (never commit)
+output/
+debug_*.html
+*.xlsx
+*.csv
+!tests/fixtures/*.csv
+
+# Binaries (publish via GitHub Releases instead)
+*.exe
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.pem
+*.key

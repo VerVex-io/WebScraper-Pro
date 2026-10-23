@@ -1,0 +1,10 @@
+{
+  "name": "sbs",
+  "search_url": "https://www.sbsinformatique.com/recherche?controller=search&s={query}",
+  "selectors": {
+    "item": "div.product-description",
+    "name": "div.tvproduct-name.product-title",
+    "price": "div.product-price-and-shipping",
+    "url": "a"
+  }
+}

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webscraper-pro"
+version = "2.0.0"
+description = "Config-driven e-commerce product scraper with GUI, CLI and secure-by-default exports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Fedi Manaa" }]
+keywords = ["web-scraping", "selenium", "e-commerce", "tkinter", "excel"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+  "undetected-chromedriver>=3.5.5",
+  "selenium>=4.20,<5",
+  "beautifulsoup4>=4.12",
+  "soupsieve>=2.9.0",
+  "openpyxl>=3.1",
+  "requests>=2.32",
+  "urllib3>=2.8.0",
+  "pillow>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.5", "bandit>=1.7", "pip-audit>=2.7"]
+
+[project.scripts]
+webscraper-pro = "webscraper_pro.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["webscraper_pro*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["webscraper_pro"]
+omit = ["webscraper_pro/gui.py", "webscraper_pro/browser.py", "webscraper_pro/__main__.py"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "S", "UP", "BLE"]
+ignore = ["S101"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S", "B", "BLE", "E501"]

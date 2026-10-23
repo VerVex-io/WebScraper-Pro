@@ -1,0 +1,11 @@
+{
+  "name": "alibaba",
+  "search_url": "https://www.alibaba.com/trade/search?tab=all&SearchText={query}",
+  "selectors": {
+    "item": "div.fy23-search-card.m-gallery-product-item-v2.J-search-card-wrapper",
+    "name": "a.search-card-e-slider__link",
+    "price": "div.search-card-e-price-normal",
+    "url": "a.search-card-e-slider__link",
+    "image_url": "img.search-card-e-slider__img"
+  }
+}
