@@ -7,7 +7,7 @@ name = "webscraper-pro"
 version = "2.0.0"
 description = "Config-driven e-commerce product scraper with GUI, CLI and secure-by-default exports."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "Fedi Manaa" }]
 keywords = ["web-scraping", "selenium", "e-commerce", "tkinter", "excel"]
@@ -24,7 +24,7 @@ dependencies = [
   "openpyxl>=3.1",
   "requests>=2.32",
   "urllib3>=2.8.0",
-  "pillow>=12.3.0",
+  "pillow>=13.0.0",
 ]
 
 [project.optional-dependencies]
@@ -47,7 +47,7 @@ omit = ["webscraper_pro/gui.py", "webscraper_pro/browser.py", "webscraper_pro/__
 
 [tool.ruff]
 line-length = 110
-target-version = "py310"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "S", "UP", "BLE"]

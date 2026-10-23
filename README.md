@@ -3,7 +3,7 @@
 [![CI](https://github.com/VerVex-io/webscraper-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/VerVex-io/webscraper-pro/actions/workflows/ci.yml)
 [![Security](https://github.com/VerVex-io/webscraper-pro/actions/workflows/security.yml/badge.svg)](https://github.com/VerVex-io/webscraper-pro/actions/workflows/security.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 
 A config-driven product scraper for e-commerce sites. Pick a site, type a keyword, and get
 **JSON, CSV and Excel (with embedded product images)**. Includes a Tkinter GUI, a CLI, and an
@@ -22,7 +22,7 @@ auto-config tool that detects CSS selectors for new sites.
 
 ## Install
 
-Requires Python 3.10+ and Google Chrome.
+Requires Python 3.11+ and Google Chrome.
 
 ```bash
 git clone https://github.com/VerVex-io/webscraper-pro.git
